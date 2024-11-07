@@ -1,18 +1,60 @@
 @import './base.css';
 
 #app {
+  font-family: Arial, Helvetica, sans-serif;
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
+  width: 100%;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+body {
+  background-color: #ffe6f0;
+  /* 柔和粉紅背景 */
+  font-family: Arial, sans-serif;
+  color: #5c005c;
+  /* 深紫色文字，增加對比 */
+}
+
+h1,
+h2 {
+  color: #ff66b2;
+  /* 較亮的粉紅標題 */
+}
+
+label {
+  color: #a60073;
+  font-weight: bold;
+}
+
+input,
+select {
+  background-color: #ffd1e8;
+  /* 輕粉紅表單背景 */
+  border: 1px solid #ff66b2;
+  border-radius: 4px;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #ff80bf;
+  font-size: 1rem;
+  padding: 0.75rem;
+  border-radius: 0.625rem;
+  border: none;
+  font-weight: bold;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0.25rem;
+}
+
+button:hover {
+  background-color: #e65c99;
 }
 
 @media (hover: hover) {
@@ -24,12 +66,5 @@ a,
 @media (min-width: 1024px) {
   body {
     display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
   }
 }
